@@ -6,15 +6,18 @@
  * @version 18.09.2025
 */
 
-public class Calculator {
+public class FibonacciSequence {
 	public static void main(String[] args) {
-		int fibo = 1;
-		int prec = 0;
+		long F0 = 1;
+		long F1 = 0;
+		long ris = 0;
 		
-		for (num = 0; num <= 1000; num++)
-			prec = fibo
-			fibo = fibo + prec;
+		for (int num = 0; num <= 1000; num++) {
+			ris = F0 + F1;
+			F1 = F0;
+			F0 = ris;
 			
+			System.out.println("F(" + num + ") = " + F0);
 		}
 	}
 }
