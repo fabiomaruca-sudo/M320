@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/6.1_Studente/6.1_Studente.iml" filepath="$PROJECT_DIR$/6.1_Studente/6.1_Studente.iml" />
+      <module fileurl="file://$PROJECT_DIR$/6.2_libro/6.2_libro.iml" filepath="$PROJECT_DIR$/6.2_libro/6.2_libro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/6.3_Classe_Punto/6.3_Classe_Punto.iml" filepath="$PROJECT_DIR$/6.3_Classe_Punto/6.3_Classe_Punto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HelloClass/HelloClass.iml" filepath="$PROJECT_DIR$/HelloClass/HelloClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/capitolo 6.iml" filepath="$PROJECT_DIR$/.idea/capitolo 6.iml" />
+    </modules>
+  </component>
+</project>
