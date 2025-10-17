@@ -14,5 +14,6 @@ public class Main {
 
         std1.saluta();
         std2.promosso(false);
+        System.out.println(std1);
     }
 }

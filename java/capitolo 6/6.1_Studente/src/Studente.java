@@ -15,6 +15,16 @@ public class Studente {
         this.isPromosso = isPromosso;
     }
 
+    @Override
+    public String toString() {
+        return "Studente{" +
+                "nome='" + nome + '\'' +
+                ", eta=" + eta +
+                ", corso='" + corso + '\'' +
+                ", isPromosso=" + isPromosso +
+                '}';
+    }
+
     public void saluta() {
         System.out.println("Ciao " + nome + " " + corso);
     }

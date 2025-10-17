@@ -1,4 +1,3 @@
-import math;
 public class Punto {
     private float x;
     private float y;
@@ -21,9 +20,29 @@ public class Punto {
     }
 
     public String determinaQuadante() {
-        int quadante = 0;
+        int quadrante = 0;
         if (x > 0) {
             quadrante = 1;
-        }
+            if (y < 0) {
+                quadrante = 4;
+            }
+        }else if (x < 0) {
+                quadrante = 2;
+                if (y < 0) {
+                    quadrante = 3;
+                }
+            }
+        String frase = "Il punto è sul " + quadrante + " quadrante";
+        return frase;
+    }
+
+    @Override
+    public String toString() {
+        return "Punto{" +
+                "x=" + x +
+                ", y=" + y +
+                ", Distanza Centro= " + calcolaDistanza() +
+                ", quadrante= " + determinaQuadante() +
+                '}';
     }
 }
