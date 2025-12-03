@@ -1,15 +1,23 @@
 @startuml
-'https://plantuml.com/sequence-diagram
+skinparam classAttributeIconSize 0
+class Automobile {
+ -marca: string
+ -modello: string
+ -targa: Targa
+ +Automobile(marca : string, modello : string, targa : Targa)
+ +getMarca():string
+ +setMarca(string)
+ +getModello():string
+ +setModello(string)
+ +frena(): void
+}
 
-autonumber
+class Targa{
+-numero: string
++Targa(numero : string)
++getNumero(string)
++setNumero(string)
+}
 
-== Initialization ==
-
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
-
-== Repetition ==
-
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: another authentication Response
+Automobile "1" -- "1" Targa
 @enduml

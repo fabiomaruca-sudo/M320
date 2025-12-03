@@ -1,0 +1,28 @@
+@startuml
+skinparam classAttributeIconSize 0
+class Window {
+ -float: height
+ -float: width
+ -Button[]: buttons
+ +Automobile(float : height, float : width)
+ +getHeight():float
+ +setHeight(float)
+ +getWidth():float
+ +setWidth(float)
+ +getButtons:Button[]
+ +setButtons(Button[])
+}
+
+class Button{
+ -float: height
+ -float: width
+ -String: label
+ +getHeight():float
+ +setHeight(float)
+ +getWidth():float
+ +setWidth(float)
+ +getLabel:String
+ +setLabel(String)
+}
+
+@enduml

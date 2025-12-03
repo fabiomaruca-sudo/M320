@@ -1,0 +1,24 @@
+@startuml
+skinparam classAttributeIconSize 0
+class Account {
+ -balance: double
+ -accountNumber: string
+ +Account(String accountNumber, double balance)
+ +deposit(double amount): void
+ +withdraw(double amount): void
+ +getBalance(): double
+ +getAccountNumber(): String
+}
+
+class Client{
+-name: String
+-account Account
++Client(String name, Account account)
++String getName(): String
++Account getAccount(): Account
++addFunds (double ammount): void
++withdrawFunds(double amount): void
+}
+
+Account "1" -- "1" Client
+@enduml

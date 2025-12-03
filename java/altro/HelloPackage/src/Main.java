@@ -1,11 +1,8 @@
+import matematica.geometria.figure2D.Rettangolo;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        Targa t1 = new Targa("TI0000000001");
-        Targa t2 = new Targa("313");
-
-        Automobile a1 = new Automobile("Fiat", "Punto",t1);
-        System.out.println(a1.getTarga());
     }
 }
