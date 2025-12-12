@@ -1,0 +1,39 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Dipendente {
+ ~nome: string
+ ~matricola: int
+ ~salarioBase: double
+ ~pagaOraria: double
+ +Dipendente(nome : String, matricola : int, salarioBase : double, pagaOraria : double)
+ +getNome():string
+ +setNome(string):void
+ +getSalarioBase():double
+ +setSalarioBase(double):void
+ +getMatricola():int
+ +setMatricola(int):void
+ +getPagaOraria():double
+ +setPagaOraria(double):void
+ +calcolaStipendio(double)
+}
+
+class Tecnico {
+-oreStraordinario:int
++Tecnico(nome : String, matricola : int, salarioBase : double, pagaOraria : double, oreStraordinario : int)
++getOreStraordinario():int
++setOreStraordinario(int):void
++calcolaStipendioTecnico(): double
+}
+
+class Dirigente{
+-bonusAnnuale:double
++Tecnico(nome : String, matricola : int, salarioBase : double, pagaOraria : double, bonusAnnuale : double)
++getBonusAnnuale():double
++setBonusAnnuale(double):void
++calcolaStipendioDirigente():double
+}
+
+Dipendente <|-- Tecnico
+Dipendente <|-- Dirigente
+@enduml
